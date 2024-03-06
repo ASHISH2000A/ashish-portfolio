@@ -166,17 +166,18 @@ div .container
 .head_col1
 {
     width:80%;
-    margin: 0px 28px;
+    margin: 0px 30px;
 }
 .head_col1 h1
 {
+    text-align:center;
     margin-top:40px;
     margin-left:20px;
     font-size:36px;
 }
 .head_col1 h1 span
 {
-  color:ghostwhite;  
+  color:#00e7ff;  
 }
 .head_col1 h3
 {
@@ -190,7 +191,7 @@ div .container
 {
      text-decoration: none;
      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color:#808080;
+     color#0b9b6c;
 }
 .head_button
 {
