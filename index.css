@@ -97,7 +97,6 @@ div .container
 {
     margin-top:15px;
     margin-left: 50px;
-    /* background-color: red; */
     width:40%;
 }
 .but_top
@@ -207,6 +206,7 @@ div .container
 {
     margin-top:15px;
     margin-left: 50px;
+    justify-content: space-between;
     width:40%;
 }
 .but_top
