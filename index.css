@@ -130,6 +130,85 @@ div .container
     margin: 70px 90px;
 }   
 
+/* banner section for qoute*/
+
+.quote_banner
+{
+ height:250px;
+ background-image: linear-gradient(to right, #6a11cb 0%, #2575fc 100%);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 @media (max-width:600px) 
 {
