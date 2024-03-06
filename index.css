@@ -57,7 +57,7 @@ hr
 
 /* now we will add css for header text */
 
-.header
+div .header
 {
     margin-top:80px;
     width: 110%;
@@ -137,7 +137,7 @@ div .container
 
 /* banner section for qoute*/
 
-.quote_banner
+div .quote_banner
 {
  width:100%;
  height:250px;
