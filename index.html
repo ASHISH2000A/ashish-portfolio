@@ -5,15 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Ashish </title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.lordicon.com/lordicon.js"></script>
     <!-- below we are using cdn for icon -->
     <link
     href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
     rel="stylesheet"
-/>
+     />
     <script src="https://kit.fontawesome.com/408b1390c2.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./index.css">
-     <script src="./index.js" crossorigin="anonymous"></script>
-    
   </head>
   <body>
 
@@ -22,77 +21,45 @@
 
   <div class="sticy-nav">
     <nav>
-      <img src="./newlogo_120.png" alt="" class="logo">
+      <img src="./Ashishg3.png" alt="" class="logo">
       <ul>
         <li><a href="#">Home</a></li>
         <li><a href="#">About Us</a></li>
         <li><a href="#">Contact</a></li>
         <li><a href="#">Portfolio</a></li>
         <li><a href="#">Experience</a></li>
-        <i class="ri-menu-line"></i>
+        <lord-icon
+    src="https://cdn.lordicon.com/pcllgpqm.json"
+    trigger="hover"
+    style="width:50px;height:50px">
+        </lord-icon>
+        <!-- <i class="ri-menu-line"></i> -->
       </ul>
     </nav>
   </div>
 
-<div id="header">
-    <div class="header-text">
-     <h2>Hello! , I'm <span>Ashish Gupta</span></h2>
-<!--    below text is used to typewrite effect on page -->
-      <h1>
-      <a href="" class="typewrite" 
-      data-period="2000" 
-      data-type='[ "Front End Developer", "Javascript Developer",
-      "MERN Stack Developer"]'>
-      <span class="wrap"></span>
-    </a>
-   </h1>      
-    </div>
-  </div>
+<!-- banner for header -->
+ <div class="header">
+      <div class="container">
+        <div class="head_col1">
+          <h1>Hello Folks! I'am <span>Ashish Gupta</span></h1>
+          <h3>
+                <a href="" class="typewrite" data-period="2000" data-type='[ "Front End Developer", "JavaScript Developer", "MERN Stack Developer", "I Love to Develop." ]'>
+                <span class="wrap"></span>
+              </a>
+            </h3>
+            <div class="head_button">
+              <button class="but_top">Hire Me</button>&nbsp;
+              <button class="but_top">Projects</button>
+            </div>
+           
 
-<!-- ------------------------------------------------ -->
-
-<div id="about">
-  <div class="container">
-    <div class="row">
-      <div class="about-col-1">
-            <img src="./assets/img/newimg2.avif" alt="">
+       </div>
+       <div class="head_col2">
+          <img src="./ashishcircular.png" alt="Ashish Gupta">
+       </div>
       </div>
-      <div class="about-col-2">
-        <h1 class="sub-title">
-          About Me</h1>
-        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-
-        <div class="tab-titles">
-          <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
-          <p class="tab-links"  onclick="opentab('experience')">Experience</p>
-          <p class="tab-links"  onclick="opentab('education')">Education</p>
-        </div>
-        <div class="tab-contents active-tab" id="skills">
-          <ul>
-            <li><span>WEB DEVELOPMENT</span><br>DEVELOPMENT/APP INTERFACES</li>
-            <li><span>WEB DEVELOPMENT</span><br>DEVELOPMENT/APP INTERFACES</li>
-            <li><span>WEB DEVELOPMENT</span><br>DEVELOPMENT/APP INTERFACES</li>
-          </ul>
-        </div>
-        <div class="tab-contents" id="experience">
-          <ul>
-            <li><span>WEB DEVELOPMENT</span><br>DEVELOPMENT/APP INTERFACES</li>
-            <li><span>WEB DEVELOPMENT</span><br>DEVELOPMENT/APP INTERFACES</li>
-            <li><span>WEB DEVELOPMENT</span><br>DEVELOPMENT/APP INTERFACES</li>
-          </ul>
-        </div>
-        <div class="tab-contents" id="education">
-          <ul>
-            <li><span>WEB DEVELOPMENT</span><br>DEVELOPMENT/APP INTERFACES</li>
-            <li><span>WEB DEVELOPMENT</span><br>DEVELOPMENT/APP INTERFACES</li>
-            <li><span>WEB DEVELOPMENT</span><br>DEVELOPMENT/APP INTERFACES</li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
+ </div>
 
 <!------------------------- SERVICES-------------------------- -->
 
@@ -199,22 +166,61 @@
   </body>
   <script>
 
-    var tablinks =document.getElementsByClassName("tab-link");
-    var tabcontents =document.getElementsByClassName("tab-contents");
+var TxtType = function(el, toRotate, period) {
+        this.toRotate = toRotate;
+        this.el = el;
+        this.loopNum = 0;
+        this.period = parseInt(period, 10) || 2000;
+        this.txt = '';
+        this.tick();
+        this.isDeleting = false;
+    };
 
-   function opentab(tabname)
-   {
-      for(tablink of tablinks)
-      {
-        tablink.classList.remove("active-link");
-      }  
-      for(tabcontent of  tabcontents)
-      {
-        tabcontents.classList.remove("active-tab");
-      } 
-      event.currentTarget.classList.add("active-link")
-      document.getElementById(tabname).classList.add("active-tab")
+    TxtType.prototype.tick = function() {
+        var i = this.loopNum % this.toRotate.length;
+        var fullTxt = this.toRotate[i];
 
-    }
+        if (this.isDeleting) {
+        this.txt = fullTxt.substring(0, this.txt.length - 1);
+        } else {
+        this.txt = fullTxt.substring(0, this.txt.length + 1);
+        }
+
+        this.el.innerHTML = '<span class="wrap">'+this.txt+'</span>';
+
+        var that = this;
+        var delta = 200 - Math.random() * 100;
+
+        if (this.isDeleting) { delta /= 2; }
+
+        if (!this.isDeleting && this.txt === fullTxt) {
+        delta = this.period;
+        this.isDeleting = true;
+        } else if (this.isDeleting && this.txt === '') {
+        this.isDeleting = false;
+        this.loopNum++;
+        delta = 500;
+        }
+
+        setTimeout(function() {
+        that.tick();
+        }, delta);
+    };
+
+    window.onload = function() {
+        var elements = document.getElementsByClassName('typewrite');
+        for (var i=0; i<elements.length; i++) {
+            var toRotate = elements[i].getAttribute('data-type');
+            var period = elements[i].getAttribute('data-period');
+            if (toRotate) {
+              new TxtType(elements[i], JSON.parse(toRotate), period);
+            }
+        }
+        // INJECT CSS
+        var css = document.createElement("style");
+        css.type = "text/css";
+        css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid #fff}";
+        document.body.appendChild(css);
+    };
   </script>
 </html>
