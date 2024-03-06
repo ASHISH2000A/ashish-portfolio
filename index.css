@@ -204,10 +204,10 @@ div .container
 }
 .head_button
 {
-    margin-top:15px;
-    margin-left: 50px;
     justify-content: space-between;
-    width:40%;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
 }
 .but_top
 {
