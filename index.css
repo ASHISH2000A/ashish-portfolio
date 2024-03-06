@@ -108,6 +108,17 @@ div .container
    width:80px;
    border-radius: 8px;
 }
+
+/*second button for header section  */
+.but_top_2
+{
+   background-color:orangered ; 
+   border:2px solid black;
+   padding:10px;
+   width:80px;
+   border-radius: 8px;
+}
+
 .head_col2
 {
     width:50%;
