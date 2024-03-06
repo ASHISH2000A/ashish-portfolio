@@ -193,7 +193,6 @@ div .container
 {
     margin-top:15px;
     margin-left: 50px;
-    /* background-color: red; */
     width:40%;
 }
 .but_top
@@ -210,8 +209,7 @@ div .container
 }
 .head_col2 img
 {
-    height:200px;
-
+    height:250px;
     -webkit-backdrop-filter: blur(10px);
     border-radius: 50%;
     border: 10px orangered solid;
