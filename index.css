@@ -68,7 +68,6 @@ div .container
 .head_col1
 {
     width:50%;
-    background-color:red;
 }
 .head_col1 h1
 {
@@ -191,7 +190,7 @@ div .container
 {
      text-decoration: none;
      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-     color#0b9b6c;
+     color:#0b9b6c;
 }
 .head_button
 {
