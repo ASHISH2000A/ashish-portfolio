@@ -472,6 +472,20 @@ textarea
         font-weight:800;
         display:inline-block;
     }
+    .sticy-nav nav
+    {
+
+    backdrop-filter: blur(8px);
+    height:80px;
+    padding:0px 120px;
+    position: fixed;
+    top: 0;
+    display: flex;
+    width:100%;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap; 
+    }
     
 }
 
