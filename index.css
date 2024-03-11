@@ -460,7 +460,7 @@ textarea
 
 
 /* Media query for Mobile Portrait */
-@media screen and (max-device-width:320px) 
+@media screen and (max-width:600px) 
     and (orientation: portrait) 
 {
     nav ul li
