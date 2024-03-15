@@ -13,22 +13,28 @@
     rel="stylesheet"
      />
     <script src="https://kit.fontawesome.com/408b1390c2.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="./assets/css/index.css">
+
+
+ 
   </head>
   <body>
+
+
+
 
 
    
 
   <div class="sticy-nav">
     <nav>
-      <img src="./Ashishg3.png" alt="" class="logo">
+      <img src="./assets/img/Ashishg3.png" alt="" class="logo">
       <ul>
         <li><a href="#">Home</a></li>
-        <li><a href="#">About Us</a></li>
-        <li><a href="#">Contact</a></li>
-        <li><a href="#">Portfolio</a></li>
-        <li><a href="#">Experience</a></li>
+        <li><a href="#about_link">About Us</a></li>
+        <li><a href="#cont_link">Contact</a></li>
+        <li><a href="#port_link">Portfolio</a></li>
+        <li><a href="#work_div">Experience</a></li>
         <lord-icon
     src="https://cdn.lordicon.com/pcllgpqm.json"
     trigger="hover"
@@ -40,8 +46,11 @@
   </div>
 
 <!-- banner for header -->
- <div class="header w-100">
-      <div class="container">
+ <div class="header">
+    <div class="img_shape">
+       <img src="./assets/img/shape-1.png" alt="">
+    </div>
+    <div class="container">
         <div class="head_col1">
           <h1>Hello Folks! I'am <span>Ashish Gupta</span></h1>
           <h3>
@@ -53,83 +62,79 @@
               <button class="but_top">Hire Me</button>&nbsp;
               <button class="but_top_2">Projects</button>
             </div>
-           
-
        </div>
        <div class="head_col2">
-          <img src="./ashishcircular.png" alt="Ashish Gupta">
+          <img src="./assets/img/ashishcircular.png" alt="Ashish Gupta">
        </div>
       </div>
  </div>
 
-<!--  quote banner  -->
-<!-- 
-<div class="quote_banner container-fluid w-100 h-25 p-5" style="background: linear-gradient(to left, #5433ff, #20bdff, #a5fecb);">
-   <h2 class="text-center ">
-     "The true ENTREPRENEUR is a risk taker, not an excuse maker."
-   </h2> 
-</div> -->
+
 
 <!-- About Me -->
 
-<div class="About_Sec">
-      <div class=" col-sm-6 ">
-        <!-- <img class="border border-3" src="./assets/img/Ashish_newbg.png" alt="" style="margin-left: 140px;"> -->
-        <video width="600" height="440" autoplay loop>
-          <source src="./provideo.mp4">
-        </video>
-      </div> 
-      <div class="col-sm-6   ">
-         <h3 class="heading3">About Me</h3>
-         <p class="para_wrap
-        ">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempora voluptates praesentium, rerum deserunt libero eos dolore quaerat totam provident cupiditate?</p>
+<div id="about_link">
+  <div class="About_Sec">
+    <div class=" col-sm-6 ">
+      <!-- <img class="border border-3" src="./assets/img/Ashish_newbg.png" alt="" style="margin-left: 140px;"> -->
+      <video width="600" height="440" autoplay loop>
+        <source src="./assets/files/provideo.mp4">
+      </video>
+    </div> 
+    <div class="col-sm-6   ">
+       <h3 class="heading3">About Me</h3>
+       <p class="para_wrap
+      ">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempora voluptates praesentium, rerum deserunt libero eos dolore quaerat totam provident cupiditate?</p>
 
-        <p class="para_wrap">
-          A Specialist in UI/UX design. A passion 
-          of mine is designing and solving problems 
-          through user experience, primarily on mordern web UI
-        </p> 
-         <p class="para_wrap">
-          Strong Knowledge in MERN Stack with vast experience 
-          in building Web Applications, used React.js 
-          for client side,Node.js / Express for server side MongoDB for database
-        </p>
+      <p class="para_wrap">
+        A Specialist in UI/UX design. A passion 
+        of mine is designing and solving problems 
+        through user experience, primarily on mordern web UI
+      </p> 
+       <p class="para_wrap">
+        Strong Knowledge in MERN Stack with vast experience 
+        in building Web Applications, used React.js 
+        for client side,Node.js / Express for server side MongoDB for database
+      </p>
 
-        <div class="container d-flex ">
-          
-          <ul class="social_list">
-           <a  href="./ASHISH FRONT END.pdf"  download>
-            <button class="h-75 border border-2 border-black rounded-3 text-center " style="background-color: orangered; padding:10px;"><i class="fa fa-download me-2"></i>Download CV</button>
-           </a> 
-           <li class="p-lg-3">
-            <a href="https://www.linkedin.com/in/ashishgupta748/">
-              <i class="fa-brands fa-linkedin-in" style="color: #74C0FC; "></i>
-            </a>
-           </li>
-           <li class="p-lg-3">
-             <a href="#">
-              <i class="fa-brands fa-instagram" style=""></i>
-             </a>
-           </li>
-           <li class="p-lg-3">
-            <a href="">
-              <i class="fa-brands fa-x-twitter" style="color: #63E6BE;"></i>
-            </a>
-           </li>
-          </ul>
-        </div>
-     </div> 
+      <div class="container d-flex ">
+        
+        <ul class="social_list">
+         <a  href="./assets/files/ASHISH FRONT END.pdf"  download>
+          <button class="h-75 border border-2 border-black rounded-3 text-center " style="background-color: orangered; padding:10px;"><i class="fa fa-download me-2"></i>Download CV</button>
+         </a> 
+         <li class="p-lg-3">
+          <a href="https://www.linkedin.com/in/ashishgupta748/">
+            <i class="fa-brands fa-linkedin-in" style="color: #74C0FC; "></i>
+          </a>
+         </li>
+         <li class="p-lg-3">
+           <a href="#">
+            <i class="fa-brands fa-instagram" style=""></i>
+           </a>
+         </li>
+         <li class="p-lg-3">
+          <a href="">
+            <i class="fa-brands fa-x-twitter" style="color: #63E6BE;"></i>
+          </a>
+         </li>
+        </ul>
+      </div>
+   </div> 
+</div>
 </div>
 
 
 <!-- Work Experience -->
-<div class="work_div">
+<div id="work_div">
+  <h3>Experience</h3>
   <p class="work_has_p">Since beginning my journey as a freelance designer 12 years ago, I've done remote work for agencies, consulted for startups, and collaborated with talented people to create digital products for both business and consumer use. I'm quietly confident, naturally curious, and perpetually working on improving my chops.</p>
 
 
 
 
     <div class="work_wrap">
+     
       <div class="column">
          <span class="col_icon">
           <lord-icon
@@ -138,17 +143,18 @@
           style="width:50px;height:50px">
           </lord-icon>
          </span>
-        <h1 class="title">Designer</h1>
+        <h1 class="title">SEO Executive</h1>
         <p class="para">I value simple content structure, clean design patterns, and thoughtful interactions.</p>
-        <p class="para text-info  ">Things I enjoy designing:</p>
-        <p class="para">UX, UI, Web, Apps, Logos</p>
-        <p class="para">Design Tools:</p>
+        <p class="para text-info  ">Things I enjoy optimizing:</p>
+        <p class="para">On-Page,Off-Page,Technichal SEO</p>
+        <p class="para">SEO Tools:</p>
         <ul class="work_list">
-          <li>Affinity Designer</li>
-          <li>Figma</li>
-          <li>Pen &amp; Paper</li>
-          <li>Sketch</li>
-          <li>Webflow</li>
+          <li>Semrush</li>
+          <li>Ahref</li>
+          <li>Google Search Console</li>
+          <li>Google Analytics</li>
+          <li></li>
+          <li>GTAG Manager</li>
         </ul>
       </div>
       <div class="vl"></div>
@@ -160,18 +166,16 @@
           style="width:50px;height:50px">
           </lord-icon>
          </span>
-        <h1 class="title">Designer</h1>
+        <h1 class="title">Front End Developer</h1>
         <p class="para">I value simple content structure, clean design patterns, and thoughtful interactions.</p>
         <p class="para text-info ">Languages I speak:</p>
-        <p class="para">HTML, Pug, Slim, CSS, Sass, Git</p>
+        <p class="para">HTML,CSS,Tailwind CSS,Git,JavaScript,React</p>
         <p class="para">Dev Tools:</p>
         <ul class="work_list">
-          <li>Bitbucket</li>
           <li>Bootstrap</li>
-          <li>Pen &amp; Paper</li>
+          <li>VsCode</li>
           <li>Git</li>
           <li>Github</li>
-          <li>VSCode</li>
         </ul>
       </div>
       <div class="vl"></div>
@@ -183,17 +187,17 @@
           style="width:50px;height:50px">
           </lord-icon>
          </span>
-        <h1 class="title">Designer</h1>
+        <h1 class="title">BackEnd Developer</h1>
         <p class="para">I value simple content structure, clean design patterns, and thoughtful interactions.</p>
         <p class="para text-info">Things I enjoy designing:</p>
-        <p class="para">UX, UI, Web, Apps, Logos</p>
-        <p class="para">Design Tools:</p>
+        <p class="para">Database,Admin Panel,Dashboard</p>
+        <p class="para">Tools:</p>
         <ul class="work_list">
-          <li>Affinity Designer</li>
-          <li>Figma</li>
-          <li>Pen &amp; Paper</li>
-          <li>Sketch</li>
-          <li>Webflow</li>
+          <li>Node js</li>
+          <li>Express</li>
+          <li>SQL</li>
+          <li>MySQL</li>
+          <li>MongoDB</li>
         </ul>
       </div>
     </div>
@@ -203,27 +207,13 @@
 
 
 
-<div class="cards_block">
-   <div class="card_cover">
-            <div class="card_wrap">
-               <!-- <img src="./assets/img/port7_big.jpg" alt=""> -->
-            </div>
-            <div class="card_wrap">
-              <!-- <img src="./assets/img/port7_big.jpg" alt=""> -->
-           </div>
-            <div class="card_wrap">
-             <!-- <img src="./assets/img/port7_big.jpg" alt=""> -->
-            </div>
-            <div class="card_wrap">
-            <!-- <img src="./assets/img/port7_big.jpg" alt=""> -->
-            </div>
-            <div class="card_wrap">
-           <!-- <img src="./assets/img/port7_big.jpg" alt=""> -->
-            </div>
-            <div class="card_wrap">
-         <!-- <img src="./assets/img/port7_big.jpg" alt=""> -->
-            </div>
-   </div>
+<div id="port_link">
+  <div class="cards_block">
+    <h3>Portfolio</h3>
+    <div class="card_cover">
+          
+    </div>
+ </div>
 </div>
 
 
@@ -331,15 +321,19 @@
 
 
 
+<!--  quote banner  -->
 
-
-
+<div class="quote_banner container-fluid w-100 h-25 p-5">
+  <h2 class="text-center ">
+    "The true ENTREPRENEUR is a risk taker, not an excuse maker."
+  </h2> 
+</div>
 
 
 
 
 <!-- contact form -->
-            <div>
+            <div id="cont_link">
               <h3 class="head_con">Contact Me</h3>
               <div class="contact_form">
                 <div class="cont_for_wrap">
@@ -376,7 +370,6 @@
             </div>
 
         <!-- top arrow -->
-
         <div class="top_Arrow">
           <a href="#">
             <lord-icon
@@ -386,13 +379,14 @@
             </lord-icon>
           </a>
         </div>
+       
         <!-- copyright -->
        <div class="copyright">
-         <p>Copyright &copy; Made by Ashish Gupta</p>
+         <h4>Copyright &copy; Made by Ashish Gupta
+         <span style="color: red;">&hearts;</span>
+        </h4>
        </div>
-
-
-
+      
 
 
 
