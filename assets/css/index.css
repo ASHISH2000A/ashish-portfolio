@@ -322,9 +322,11 @@ video
     border: 2px solid black;
     border-radius:20px;
     background-image: url('../img/portimg.jpg');
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+    object-fit:cover;
+    
+/*     display: flex; */
+/*     justify-content: space-between;
+    flex-wrap: wrap; */
 }
 .card_wrap
 {
