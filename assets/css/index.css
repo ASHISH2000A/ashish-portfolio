@@ -29,8 +29,12 @@
 /* page loader */
 
 
-
-
+/* this is a model viewer used to render 3D object in webpage */
+model-viewer
+      {
+        height: 500px;
+        width: 100%;
+      }
 
 
 
