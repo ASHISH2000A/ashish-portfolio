@@ -339,7 +339,6 @@ video
     height: 500px;
     border: 2px solid black;
     border-radius:20px;
-    background-image: url('../img/portimg.jpg');
     object-fit:cover;
     
 /*     display: flex; */
