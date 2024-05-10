@@ -32,6 +32,7 @@
 /* this is a model viewer used to render 3D object in webpage */
 model-viewer
       {
+        border-radius:10px;  
         height: 500px;
         width: 100%;
       }
